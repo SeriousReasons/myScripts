@@ -19,7 +19,7 @@ del argv[0:2]
 #Создание таблицы
 monitorTable = PrettyTable()
 #Наименование столбцов таблицы
-monitorTable.field_names = ["URL", "Time delay", "Response code", "Status"]
+monitorTable.field_names = ["URL", "Time delay, sec", "Response code", "Status"]
 
 #Основной цикл мониторинга
 while True:
@@ -58,7 +58,7 @@ while True:
                 status = "Unknown code" + Fore.RESET
 
         #Создание строки в таблице на основе полученных данных
-        monitorTable.add_row([argv[i], response.elapsed, response.status_code, status])
+        monitorTable.add_row([argv[i], response.elapsed.total_seconds(), response.status_code, status])
 
     #Отчистка окна терминала
     print("\033[H\033[J")
