@@ -10,7 +10,7 @@ from time import sleep
 from prettytable import PrettyTable
 from colorama import Fore
 
-#Переменная для хранения времени задержки
+#Переменная для хранения времени задержки между GET-запросами
 sleepTime = int(argv[1])
 
 #Удаление лишних параметров
@@ -19,7 +19,7 @@ del argv[0:2]
 #Создание таблицы
 monitorTable = PrettyTable()
 #Наименование столбцов таблицы
-monitorTable.field_names = ["URL", "Time delay, sec", "Response code", "Status"]
+monitorTable.field_names = ["URL", "Response delay, sec", "Response code", "Status"]
 
 #Основной цикл мониторинга
 while True:
