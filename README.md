@@ -1,9 +1,9 @@
 # myScript
 
 # Установка требуемых библиотек
-pip3 install -r requirements.txt
+pip3 install -r pathTo/requirements.txt
 
 # Запуск скрипта
-sudo python3 ./monitoring.py <задержка между запросами> <url1> <url2> <url3> ...
+sudo python3 pathTo/monitoring.py <задержка между GET-запросами> <url1> <url2> ...
   
-формат url - http://*
+формат url - http://* or https://*
