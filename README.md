@@ -1,9 +1,9 @@
-# myScript
+# Monitor
 
-# Установка требуемых библиотек
+# Installing required libraries
 pip3 install -r pathTo/requirements.txt
 
-# Запуск скрипта
+# Running a script
 sudo python3 pathTo/monitoring.py <задержка между GET-запросами> <url1> <url2> ...
   
-формат url - http://* или https://*
+URL format "http://*" или "https://*"
